@@ -1,0 +1,11 @@
+/Users/emirkovacevic/Documents/develompment/learning/backend-roadmap-lab/roadmaps/backend/csharp/src/BackendRoadmap/bin/Debug/net10.0/BackendRoadmap.deps.json
+/Users/emirkovacevic/Documents/develompment/learning/backend-roadmap-lab/roadmaps/backend/csharp/src/BackendRoadmap/bin/Debug/net10.0/BackendRoadmap.dll
+/Users/emirkovacevic/Documents/develompment/learning/backend-roadmap-lab/roadmaps/backend/csharp/src/BackendRoadmap/bin/Debug/net10.0/BackendRoadmap.pdb
+/Users/emirkovacevic/Documents/develompment/learning/backend-roadmap-lab/roadmaps/backend/csharp/src/BackendRoadmap/obj/Debug/net10.0/BackendRoadmap.GeneratedMSBuildEditorConfig.editorconfig
+/Users/emirkovacevic/Documents/develompment/learning/backend-roadmap-lab/roadmaps/backend/csharp/src/BackendRoadmap/obj/Debug/net10.0/BackendRoadmap.AssemblyInfoInputs.cache
+/Users/emirkovacevic/Documents/develompment/learning/backend-roadmap-lab/roadmaps/backend/csharp/src/BackendRoadmap/obj/Debug/net10.0/BackendRoadmap.AssemblyInfo.cs
+/Users/emirkovacevic/Documents/develompment/learning/backend-roadmap-lab/roadmaps/backend/csharp/src/BackendRoadmap/obj/Debug/net10.0/BackendRoadmap.csproj.CoreCompileInputs.cache
+/Users/emirkovacevic/Documents/develompment/learning/backend-roadmap-lab/roadmaps/backend/csharp/src/BackendRoadmap/obj/Debug/net10.0/BackendRoadmap.dll
+/Users/emirkovacevic/Documents/develompment/learning/backend-roadmap-lab/roadmaps/backend/csharp/src/BackendRoadmap/obj/Debug/net10.0/refint/BackendRoadmap.dll
+/Users/emirkovacevic/Documents/develompment/learning/backend-roadmap-lab/roadmaps/backend/csharp/src/BackendRoadmap/obj/Debug/net10.0/BackendRoadmap.pdb
+/Users/emirkovacevic/Documents/develompment/learning/backend-roadmap-lab/roadmaps/backend/csharp/src/BackendRoadmap/obj/Debug/net10.0/ref/BackendRoadmap.dll

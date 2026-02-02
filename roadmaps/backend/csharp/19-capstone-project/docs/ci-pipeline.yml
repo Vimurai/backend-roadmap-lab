@@ -1,0 +1,37 @@
+# GitHub Actions: CI Pipeline Example
+
+name: CommunityHub CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: 8.0.x
+
+    - name: Restore dependencies
+      run: dotnet restore CommunityHub.sln
+
+    - name: Build
+      run: dotnet build CommunityHub.sln --no-restore --configuration Release
+
+    - name: Run Unit Tests
+      run: dotnet test src/Tests/CommunityHub.UnitTests --no-build --verbosity normal
+
+    - name: Run Integration Tests
+      run: dotnet test src/Tests/CommunityHub.IntegrationTests --no-build --verbosity normal
+
+    # Optional: Docker Build test
+    # - name: Build Docker Image
+    #   run: docker build -t community-hub-api .
