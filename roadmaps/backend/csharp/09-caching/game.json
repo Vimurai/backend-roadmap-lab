@@ -1,0 +1,144 @@
+{
+  "lessonId": "09-caching",
+  "title": "Caching: The Post-It Note",
+  "exercises": [
+    {
+      "id": "q1",
+      "type": "MultipleChoice",
+      "prompt": "What is a 'Cache Hit'?",
+      "choices": [
+        "When the cache is deleted by accident",
+        "When the requested data is found in the cache",
+        "When the cache runs out of memory",
+        "When the database is faster than the cache"
+      ],
+      "answerIndex": 1,
+      "hint": "The librarian finds the book behind the desk.",
+      "explanation": "A cache hit occurs when the requested data is found in the fast-access cache layer."
+    },
+    {
+      "id": "q2",
+      "type": "FillBlank",
+      "prompt": "____ stands for Time To Live, which is the expiration duration for cached data.",
+      "answer": "ttl",
+      "accepted": [
+        "ttl"
+      ],
+      "hint": "3 letters.",
+      "explanation": "TTL (Time To Live) is used to prevent data from remaining in the cache indefinitely."
+    },
+    {
+      "id": "q3",
+      "type": "MultipleChoice",
+      "prompt": "What is the main drawback of In-Memory Caching?",
+      "choices": [
+        "It is very slow",
+        "It uses a separate server",
+        "The data is lost if the application restarts",
+        "It only stores strings"
+      ],
+      "answerIndex": 2,
+      "hint": "RAM is volatile.",
+      "explanation": "In-memory cache is stored in the app's process; if the process stops, the cache is cleared."
+    },
+    {
+      "id": "q4",
+      "type": "ArrangeTokens",
+      "prompt": "Arrange the steps of the 'Cache-Aside' pattern in order.",
+      "tokens": [
+        "Check Cache",
+        "If Miss, Read from DB",
+        "Write to Cache",
+        "Return Data"
+      ],
+      "answer": [
+        "Check Cache",
+        "If Miss, Read from DB",
+        "Write to Cache",
+        "Return Data"
+      ],
+      "hint": "Check first, then fallback, then store for next time.",
+      "explanation": "The app checks the cache first, and if data isn't there, it fetches from the source and updates the cache."
+    },
+    {
+      "id": "q5",
+      "type": "FillBlank",
+      "prompt": "____ is a popular open-source, distributed, in-memory key-value store used for caching.",
+      "answer": "redis",
+      "accepted": [
+        "redis"
+      ],
+      "hint": "Starts with R.",
+      "explanation": "Redis is the industry standard for distributed caching and high-performance data storage."
+    },
+    {
+      "id": "q6",
+      "type": "MultipleChoice",
+      "prompt": "What is 'Cache Invalidation'?",
+      "choices": [
+        "Removing or updating data in the cache because it is now 'Stale'",
+        "Changing the database password",
+        "Increasing the cache size",
+        "Downloading new libraries"
+      ],
+      "answerIndex": 0,
+      "hint": "Throwing away the old Post-it note because the info changed.",
+      "explanation": "Invalidation is the process of marking cached data as invalid when the underlying source data changes."
+    },
+    {
+      "id": "q7",
+      "type": "FillBlank",
+      "prompt": "A cache ____ occurs when the requested data is NOT in the cache and must be fetched from the database.",
+      "answer": "miss",
+      "accepted": [
+        "miss"
+      ],
+      "hint": "Opposite of a hit.",
+      "explanation": "A cache miss results in a slower response as the system must retrieve data from a slower storage layer."
+    },
+    {
+      "id": "q8",
+      "type": "ArrangeTokens",
+      "prompt": "Order the storage layers from fastest to slowest access speed.",
+      "tokens": [
+        "CPU Cache",
+        "RAM (In-Memory)",
+        "Redis (Distributed)",
+        "SQL Database (Disk)"
+      ],
+      "answer": [
+        "CPU Cache",
+        "RAM (In-Memory)",
+        "Redis (Distributed)",
+        "SQL Database (Disk)"
+      ],
+      "hint": "Physical distance matters.",
+      "explanation": "The closer data is to the processor, the faster it can be retrieved."
+    },
+    {
+      "id": "q9",
+      "type": "MultipleChoice",
+      "prompt": "Why don't we cache everything?",
+      "choices": [
+        "Cache is more expensive than disk storage",
+        "Consistency becomes harder to manage",
+        "Memory (RAM) is limited",
+        "All of the above"
+      ],
+      "answerIndex": 3,
+      "hint": "Consider cost, complexity, and physical limits.",
+      "explanation": "Caching everything is impractical due to memory limits, costs, and the difficulty of keeping data synchronized."
+    },
+    {
+      "id": "q10",
+      "type": "FillBlank",
+      "prompt": "When data in the database changes but the cache still has the old value, that data is considered '____'.",
+      "answer": "stale",
+      "accepted": [
+        "stale"
+      ],
+      "hint": "Like old bread.",
+      "explanation": "Stale data can lead to bugs where the user sees outdated information."
+    }
+  ]
+}

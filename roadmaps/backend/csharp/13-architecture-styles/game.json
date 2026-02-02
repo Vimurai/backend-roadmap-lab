@@ -1,0 +1,144 @@
+{
+  "lessonId": "13-architecture-styles",
+  "title": "Architecture Styles: The City Plan",
+  "exercises": [
+    {
+      "id": "q1",
+      "type": "MultipleChoice",
+      "prompt": "What is a 'Monolith' architecture?",
+      "choices": [
+        "A system split into 100 small apps",
+        "A single, unified application where all components are under one roof",
+        "A database that only stores one table",
+        "A computer with only one CPU"
+      ],
+      "answerIndex": 1,
+      "hint": "Think of 'The Mall'.",
+      "explanation": "In a monolith, all business logic, data access, and UI code are packaged together as one unit."
+    },
+    {
+      "id": "q2",
+      "type": "FillBlank",
+      "prompt": "____ are independent, small services that communicate over a network to form a large application.",
+      "answer": "microservices",
+      "accepted": [
+        "microservices"
+      ],
+      "hint": "Think of 'Main Street' shops.",
+      "explanation": "Microservices allow teams to scale and deploy different parts of a system independently."
+    },
+    {
+      "id": "q3",
+      "type": "MultipleChoice",
+      "prompt": "What is the main disadvantage of Microservices?",
+      "choices": [
+        "They are too small to do anything",
+        "Increased complexity in management and networking",
+        "They don't support C#",
+        "They are slower than spreadsheets"
+      ],
+      "answerIndex": 1,
+      "hint": "Consider the difficulty of walking between 50 different buildings.",
+      "explanation": "Microservices introduce challenges like network latency, distributed transactions, and operational overhead."
+    },
+    {
+      "id": "q4",
+      "type": "ArrangeTokens",
+      "prompt": "Order these architectures from simplest to most complex to manage.",
+      "tokens": [
+        "Monolith",
+        "Modular Monolith",
+        "Microservices"
+      ],
+      "answer": [
+        "Monolith",
+        "Modular Monolith",
+        "Microservices"
+      ],
+      "hint": "Start with 'one roof'.",
+      "explanation": "Splitting a system into independent services adds significant infrastructure and communication complexity."
+    },
+    {
+      "id": "q5",
+      "type": "FillBlank",
+      "prompt": "An API ____ acts as a single entry point for all clients, routing requests to the appropriate microservices.",
+      "answer": "gateway",
+      "accepted": [
+        "gateway"
+      ],
+      "hint": "A 'gate' to the 'way'.",
+      "explanation": "API Gateways handle cross-cutting concerns like authentication, logging, and routing."
+    },
+    {
+      "id": "q6",
+      "type": "MultipleChoice",
+      "prompt": "In 'Event-Driven Architecture', how do services communicate?",
+      "choices": [
+        "By calling each other's private methods",
+        "By sharing the same database table",
+        "By publishing and subscribing to 'Events' (messages)",
+        "By sending emails to the developers"
+      ],
+      "answerIndex": 2,
+      "hint": "Shouting 'I finished!' instead of calling someone.",
+      "explanation": "Services in an event-driven system react to state changes published by other services."
+    },
+    {
+      "id": "q7",
+      "type": "FillBlank",
+      "prompt": "The delay introduced when data travels over a network is called ____.",
+      "answer": "latency",
+      "accepted": [
+        "latency"
+      ],
+      "hint": "Starts with L.",
+      "explanation": "Network latency is a critical factor when designing distributed systems like microservices."
+    },
+    {
+      "id": "q8",
+      "type": "ArrangeTokens",
+      "prompt": "Assemble a simple event message for a 'UserCreated' event.",
+      "tokens": [
+        "{",
+        "\"eventType\": \"UserCreated\",",
+        "\"userId\": 123,",
+        "\"timestamp\": \"2024-01-01\"",
+        "}"
+      ],
+      "answer": [
+        "{",
+        "\"eventType\": \"UserCreated\",",
+        "\"userId\": 123,",
+        "\"timestamp\": \"2024-01-01\"",
+        "}"
+      ],
+      "hint": "JSON object with type and data.",
+      "explanation": "Events are typically represented as JSON payloads containing facts about what happened."
+    },
+    {
+      "id": "q9",
+      "type": "MultipleChoice",
+      "prompt": "What is a 'Distributed System'?",
+      "choices": [
+        "A system where code is distributed on many files",
+        "A system where components are located on different networked computers",
+        "A system given away for free",
+        "A system that only uses Wi-Fi"
+      ],
+      "answerIndex": 1,
+      "hint": "The components are 'distributed' physically.",
+      "explanation": "A distributed system works together but runs on multiple machines, introducing the 'fallacies of distributed computing'."
+    },
+    {
+      "id": "q10",
+      "type": "FillBlank",
+      "prompt": "A ____ Monolith is a single application that is internally separated into well-defined modules.",
+      "answer": "modular",
+      "accepted": [
+        "modular"
+      ],
+      "hint": "Like LEGO blocks inside one box.",
+      "explanation": "Modular monoliths provide many benefits of microservices without the networking complexity."
+    }
+  ]
+}

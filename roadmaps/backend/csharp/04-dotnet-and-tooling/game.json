@@ -1,0 +1,139 @@
+{
+  "lessonId": "04-dotnet-and-tooling",
+  "title": "Dotnet and Tooling: The Workshop",
+  "exercises": [
+    {
+      "id": "q1",
+      "type": "MultipleChoice",
+      "prompt": "What is the purpose of the '.csproj' file?",
+      "choices": [
+        "It contains the C# source code",
+        "It defines project settings and dependencies",
+        "It is the compiled version of your app",
+        "It stores user passwords"
+      ],
+      "answerIndex": 1,
+      "hint": "Think of it as the manifest or 'parts list' for your project.",
+      "explanation": "The .csproj file (XML) tells the .NET SDK how to build your project and what packages to include."
+    },
+    {
+      "id": "q2",
+      "type": "FillBlank",
+      "prompt": "The package manager for .NET that allows you to download libraries is called ____.",
+      "answer": "nuget",
+      "accepted": [
+        "nuget"
+      ],
+      "hint": "It sounds like 'new-get'.",
+      "explanation": "NuGet is the official package manager for .NET, used to share and consume code."
+    },
+    {
+      "id": "q3",
+      "type": "MultipleChoice",
+      "prompt": "Which command would you use to add a new library to your project?",
+      "choices": [
+        "dotnet run",
+        "dotnet add package",
+        "dotnet build",
+        "dotnet install"
+      ],
+      "answerIndex": 1,
+      "hint": "You are 'adding' a 'package'.",
+      "explanation": "The 'dotnet add package' command modifies the .csproj file and downloads the library."
+    },
+    {
+      "id": "q4",
+      "type": "ArrangeTokens",
+      "prompt": "Arrange the command to run tests for your current project.",
+      "tokens": [
+        "dotnet",
+        "test"
+      ],
+      "answer": [
+        "dotnet",
+        "test"
+      ],
+      "hint": "Two simple words.",
+      "explanation": "The 'dotnet test' command executes unit tests using the configured test runner (like xUnit)."
+    },
+    {
+      "id": "q5",
+      "type": "FillBlank",
+      "prompt": "The ____ SDK is required to build and compile .NET applications.",
+      "answer": "dotnet",
+      "accepted": [
+        "dotnet",
+        ".net"
+      ],
+      "hint": "The name of the platform.",
+      "explanation": "The .NET SDK includes the tools needed to develop, build, and run .NET apps."
+    },
+    {
+      "id": "q6",
+      "type": "MultipleChoice",
+      "prompt": "What does 'TargetFramework' net8.0 in the .csproj file mean?",
+      "choices": [
+        "The app can only run on Windows 8",
+        "The project uses the .NET 8.0 features and runtime",
+        "The project is limited to 8 files",
+        "The app is 8 years old"
+      ],
+      "answerIndex": 1,
+      "hint": "It defines the target version of the platform.",
+      "explanation": "TargetFramework specifies which version of the .NET framework the app is built for."
+    },
+    {
+      "id": "q7",
+      "type": "FillBlank",
+      "prompt": "To compile your project without running it, use the command 'dotnet ____'.",
+      "answer": "build",
+      "accepted": [
+        "build"
+      ],
+      "hint": "Construction word.",
+      "explanation": "'dotnet build' converts source code into binary files (DLLs)."
+    },
+    {
+      "id": "q8",
+      "type": "ArrangeTokens",
+      "prompt": "Assemble the command to create a new class library project.",
+      "tokens": [
+        "dotnet",
+        "new",
+        "classlib"
+      ],
+      "answer": [
+        "dotnet",
+        "new",
+        "classlib"
+      ],
+      "hint": "Starts with the engine, followed by creation and template type.",
+      "explanation": "'dotnet new' uses templates; 'classlib' is the template for a class library."
+    },
+    {
+      "id": "q9",
+      "type": "MultipleChoice",
+      "prompt": "What is the result of running 'dotnet build'?",
+      "choices": [
+        "An executable or DLL in the bin/ folder",
+        "A website on the internet",
+        "A clean screen",
+        "A source code file"
+      ],
+      "answerIndex": 0,
+      "hint": "The output of the construction process.",
+      "explanation": "The build process produces compiled binaries, usually located in bin/Debug/ or bin/Release/."
+    },
+    {
+      "id": "q10",
+      "type": "FillBlank",
+      "prompt": "In the .csproj file, the ____ element allows you to use types without explicit imports for common namespaces.",
+      "answer": "ImplicitUsings",
+      "accepted": [
+        "ImplicitUsings"
+      ],
+      "hint": "It's about 'Usings' being 'Implicit'.",
+      "explanation": "ImplicitUsings (enabled in .NET 6+) automatically includes common namespaces like System."
+    }
+  ]
+}

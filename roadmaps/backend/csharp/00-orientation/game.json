@@ -1,0 +1,146 @@
+{
+  "lessonId": "00-orientation",
+  "title": "Orientation: The Engineer's Cockpit",
+  "exercises": [
+    {
+      "id": "q1",
+      "type": "MultipleChoice",
+      "prompt": "What does CLI stand for in the context of backend development?",
+      "choices": [
+        "Common Language Integration",
+        "Command Line Interface",
+        "Code Level Interaction",
+        "Central Logic Interface"
+      ],
+      "answerIndex": 1,
+      "hint": "It is the kitchen for chefs, not the menu for customers.",
+      "explanation": "CLI stands for Command Line Interface, the primary way engineers interact with their tools."
+    },
+    {
+      "id": "q2",
+      "type": "FillBlank",
+      "prompt": "The command used to walk into a different directory is ____.",
+      "answer": "cd",
+      "accepted": [
+        "cd"
+      ],
+      "hint": "Change Directory.",
+      "explanation": "The 'cd' command stands for Change Directory and is used to navigate the file system."
+    },
+    {
+      "id": "q3",
+      "type": "MultipleChoice",
+      "prompt": "Which component acts as the 'navigation system' in the pilot analogy?",
+      "choices": [
+        "The Mouse",
+        "The Dotnet CLI",
+        "VS Code",
+        "The Terminal"
+      ],
+      "answerIndex": 2,
+      "hint": "It shows you the state of the engine (code).",
+      "explanation": "VS Code is your IDE, providing the navigation and diagnostic tools for your code."
+    },
+    {
+      "id": "q4",
+      "type": "ArrangeTokens",
+      "prompt": "Arrange the steps of the standard coding feedback loop in order.",
+      "tokens": [
+        "Write",
+        "Run",
+        "Read Error",
+        "Repeat"
+      ],
+      "answer": [
+        "Write",
+        "Run",
+        "Read Error",
+        "Repeat"
+      ],
+      "hint": "Start with creation, then execution.",
+      "explanation": "You write code, run it, analyze any errors, and repeat the process until it works."
+    },
+    {
+      "id": "q5",
+      "type": "FillBlank",
+      "prompt": "To create a new folder via the terminal, you use the command ____.",
+      "answer": "mkdir",
+      "accepted": [
+        "mkdir"
+      ],
+      "hint": "Make Directory.",
+      "explanation": "'mkdir' stands for Make Directory and is used to create new folders."
+    },
+    {
+      "id": "q6",
+      "type": "MultipleChoice",
+      "prompt": "What happens if a command you type is not in your PATH environment variable?",
+      "choices": [
+        "The computer deletes the command",
+        "The computer cannot find the tool to run it",
+        "The computer asks for a password",
+        "The terminal closes automatically"
+      ],
+      "answerIndex": 1,
+      "hint": "PATH tells the computer where to look for tools.",
+      "explanation": "If a tool isn't in your PATH, the shell doesn't know where the executable is located."
+    },
+    {
+      "id": "q7",
+      "type": "FillBlank",
+      "prompt": "The command ____ (Unix) or 'dir' (Windows) shows you what is on the table (lists files).",
+      "answer": "ls",
+      "accepted": [
+        "ls"
+      ],
+      "hint": "List.",
+      "explanation": "'ls' is the standard Unix command for listing directory contents."
+    },
+    {
+      "id": "q8",
+      "type": "ArrangeTokens",
+      "prompt": "Build the command to create a new C# console app named 'MyApp'.",
+      "tokens": [
+        "dotnet",
+        "new",
+        "console",
+        "-o",
+        "MyApp"
+      ],
+      "answer": [
+        "dotnet",
+        "new",
+        "console",
+        "-o",
+        "MyApp"
+      ],
+      "hint": "Engine starter followed by action and name.",
+      "explanation": "The Dotnet CLI uses 'new' to create templates, and '-o' specifies the output directory."
+    },
+    {
+      "id": "q9",
+      "type": "MultipleChoice",
+      "prompt": "Why is 'Wrong Directory' a common mistake in CLI usage?",
+      "choices": [
+        "It uses too much memory",
+        "Commands run against files that don't exist in that location",
+        "It changes your user permissions",
+        "It slows down the internet"
+      ],
+      "answerIndex": 1,
+      "hint": "Think about cooking dinner in the bathroom.",
+      "explanation": "Commands are context-sensitive; running 'dotnet run' in a folder without code will fail."
+    },
+    {
+      "id": "q10",
+      "type": "FillBlank",
+      "prompt": "In a C# project, the command to compile and execute the application is 'dotnet ____'.",
+      "answer": "run",
+      "accepted": [
+        "run"
+      ],
+      "hint": "Make it go.",
+      "explanation": "'dotnet run' builds and executes the application in one step."
+    }
+  ]
+}

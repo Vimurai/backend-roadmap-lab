@@ -1,0 +1,146 @@
+{
+  "lessonId": "12-design-patterns-ddd-lite-clean-architecture",
+  "title": "Design Patterns & Clean Architecture: The Architect's Blueprints",
+  "exercises": [
+    {
+      "id": "q1",
+      "type": "MultipleChoice",
+      "prompt": "What is the main goal of 'Clean Architecture'?",
+      "choices": [
+        "To make the code run faster",
+        "To separate business logic from technical details (DB, UI)",
+        "To use as many design patterns as possible",
+        "To make the code shorter"
+      ],
+      "answerIndex": 1,
+      "hint": "Think about replacing the sink without tearing down the house.",
+      "explanation": "Clean Architecture aims to create a system where business rules are decoupled from frameworks and external tools."
+    },
+    {
+      "id": "q2",
+      "type": "FillBlank",
+      "prompt": "The 'S' in SOLID stands for Single ____ Principle.",
+      "answer": "responsibility",
+      "accepted": [
+        "responsibility"
+      ],
+      "hint": "A class should have only one reason to change.",
+      "explanation": "The Single Responsibility Principle states that a class should do one thing and do it well."
+    },
+    {
+      "id": "q3",
+      "type": "MultipleChoice",
+      "prompt": "What is 'Dependency Injection' (DI)?",
+      "choices": [
+        "Buying tools inside a method",
+        "Providing an object's dependencies from the outside (usually via constructor)",
+        "Injecting viruses into the code",
+        "A way to speed up the database"
+      ],
+      "answerIndex": 1,
+      "hint": "The waiter brings the tools to the chef.",
+      "explanation": "DI allows for better decoupling and easier testing by passing dependencies into a class."
+    },
+    {
+      "id": "q4",
+      "type": "ArrangeTokens",
+      "prompt": "Arrange the Clean Architecture layers from the center (most important) to the outside.",
+      "tokens": [
+        "Domain (Entities/Logic)",
+        "Application (Use Cases)",
+        "Infrastructure (DB/API)",
+        "UI (Web/Console)"
+      ],
+      "answer": [
+        "Domain (Entities/Logic)",
+        "Application (Use Cases)",
+        "Infrastructure (DB/API)",
+        "UI (Web/Console)"
+      ],
+      "hint": "Dependencies point inward to the core business logic.",
+      "explanation": "In Clean Architecture, the core (Domain) knows nothing about the outer layers."
+    },
+    {
+      "id": "q5",
+      "type": "FillBlank",
+      "prompt": "The 'D' in SOLID stands for ____ Inversion, which means high-level modules should not depend on low-level modules.",
+      "answer": "dependency",
+      "accepted": [
+        "dependency"
+      ],
+      "hint": "Depends on abstractions, not concretions.",
+      "explanation": "Dependency Inversion (DIP) suggests using interfaces to decouple components."
+    },
+    {
+      "id": "q6",
+      "type": "MultipleChoice",
+      "prompt": "In DDD, what is a 'Value Object'?",
+      "choices": [
+        "A database row",
+        "An object defined by its attributes, not a unique ID (like an Address)",
+        "An object that costs money",
+        "A variable like an integer"
+      ],
+      "answerIndex": 1,
+      "hint": "Two identical addresses are the same 'Value'.",
+      "explanation": "Unlike Entities, Value Objects do not have an identity and are immutable."
+    },
+    {
+      "id": "q7",
+      "type": "FillBlank",
+      "prompt": "Separation of ____ is the principle of keeping different parts of an application (like logic and data) apart.",
+      "answer": "concerns",
+      "accepted": [
+        "concerns"
+      ],
+      "hint": "Don't tangle the wires.",
+      "explanation": "Separation of Concerns makes code more modular and easier to maintain."
+    },
+    {
+      "id": "q8",
+      "type": "ArrangeTokens",
+      "prompt": "Build a constructor that uses Dependency Injection for an IUserRepository.",
+      "tokens": [
+        "public UserServer(",
+        "IUserRepository",
+        "repository",
+        ")",
+        "{ _repo = repository; }"
+      ],
+      "answer": [
+        "public UserServer(",
+        "IUserRepository",
+        "repository",
+        ")",
+        "{ _repo = repository; }"
+      ],
+      "hint": "Class name, type, name, then assignment.",
+      "explanation": "Constructor injection is the most common form of Dependency Injection in .NET."
+    },
+    {
+      "id": "q9",
+      "type": "MultipleChoice",
+      "prompt": "What does the 'Open/Closed Principle' mean?",
+      "choices": [
+        "Open the project, then close it",
+        "Software entities should be open for extension, but closed for modification",
+        "The code should be Open Source",
+        "The office should be open 24/7"
+      ],
+      "answerIndex": 1,
+      "hint": "Extend behavior without changing existing code.",
+      "explanation": "This principle helps prevent breaking existing functionality when adding new features."
+    },
+    {
+      "id": "q10",
+      "type": "FillBlank",
+      "prompt": "An ____ is a DDD concept for an object with a unique identity that persists over time.",
+      "answer": "entity",
+      "accepted": [
+        "entity"
+      ],
+      "hint": "Like a User or an Order.",
+      "explanation": "Entities are objects where identity matters more than their current state."
+    }
+  ]
+}

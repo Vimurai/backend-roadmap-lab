@@ -1,0 +1,144 @@
+{
+  "lessonId": "18-observability",
+  "title": "Observability: The X-Ray",
+  "exercises": [
+    {
+      "id": "q1",
+      "type": "MultipleChoice",
+      "prompt": "What are the 'Three Pillars of Observability'?",
+      "choices": [
+        "Code, Tests, and Deployments",
+        "Logs, Metrics, and Tracing",
+        "CPU, RAM, and Disk",
+        "Users, Servers, and Databases"
+      ],
+      "answerIndex": 1,
+      "hint": "The three ways to 'see' inside your system.",
+      "explanation": "Logs, Metrics, and Tracing provide different perspectives on a system's health and behavior."
+    },
+    {
+      "id": "q2",
+      "type": "FillBlank",
+      "prompt": "____ are a chronological diary of discrete events that happened in your system.",
+      "answer": "logs",
+      "accepted": [
+        "logs",
+        "logging"
+      ],
+      "hint": "Like a captain's log.",
+      "explanation": "Logs capture detailed information about specific events, such as errors or user actions."
+    },
+    {
+      "id": "q3",
+      "type": "MultipleChoice",
+      "prompt": "What do 'Metrics' represent?",
+      "choices": [
+        "The names of all developers",
+        "Numerical data measured over time (e.g., CPU usage, Error rate)",
+        "The source code of the application",
+        "A list of todos"
+      ],
+      "answerIndex": 1,
+      "hint": "The gauges in the cockpit.",
+      "explanation": "Metrics are used to monitor trends and overall system performance."
+    },
+    {
+      "id": "q4",
+      "type": "ArrangeTokens",
+      "prompt": "Match the pillar to its purpose: Logs (What), Metrics (Overall Health), Tracing (Where).",
+      "tokens": [
+        "Logs: What happened",
+        "Metrics: Overall health",
+        "Tracing: Where it happened"
+      ],
+      "answer": [
+        "Logs: What happened",
+        "Metrics: Overall health",
+        "Tracing: Where it happened"
+      ],
+      "hint": "Diary vs Gauge vs Map.",
+      "explanation": "Logs give detail, Metrics give context, and Tracing gives the path."
+    },
+    {
+      "id": "q5",
+      "type": "FillBlank",
+      "prompt": "A ____ ID is a unique string attached to a request to follow it across multiple services.",
+      "answer": "correlation",
+      "accepted": [
+        "correlation",
+        "trace"
+      ],
+      "hint": "It 'correlates' the logs from different systems.",
+      "explanation": "Correlation IDs (or Trace IDs) are essential for debugging distributed systems."
+    },
+    {
+      "id": "q6",
+      "type": "MultipleChoice",
+      "prompt": "Why is 'Structured Logging' (JSON) preferred over plain text logs?",
+      "choices": [
+        "It looks cooler",
+        "It is easier for machines to search and analyze",
+        "It makes the files smaller",
+        "It hides the data from hackers"
+      ],
+      "answerIndex": 1,
+      "hint": "Think about searching through a million lines of text.",
+      "explanation": "Structured logs allow tools to filter and aggregate data based on specific fields."
+    },
+    {
+      "id": "q7",
+      "type": "FillBlank",
+      "prompt": "An ____ is an automated notification sent when a metric crosses a certain threshold (e.g., 'CPU > 90%').",
+      "answer": "alert",
+      "accepted": [
+        "alert"
+      ],
+      "hint": "A warning siren.",
+      "explanation": "Alerts notify engineers of potential issues before they become outages."
+    },
+    {
+      "id": "q8",
+      "type": "ArrangeTokens",
+      "prompt": "Order the steps of investigating a production issue.",
+      "tokens": [
+        "Receive Alert",
+        "Check Metrics (Symptoms)",
+        "Check Traces (Path)",
+        "Check Logs (Details)"
+      ],
+      "answer": [
+        "Receive Alert",
+        "Check Metrics (Symptoms)",
+        "Check Traces (Path)",
+        "Check Logs (Details)"
+      ],
+      "hint": "Start with the alarm, then narrow it down.",
+      "explanation": "Observability tools are used in layers to isolate the root cause of a failure."
+    },
+    {
+      "id": "q9",
+      "type": "MultipleChoice",
+      "prompt": "What is 'Distributed Tracing'?",
+      "choices": [
+        "Drawing a map of the office",
+        "Following a single request as it travels through multiple services",
+        "Tracing the lineage of a family",
+        "Making sure all files are in the right folder"
+      ],
+      "answerIndex": 1,
+      "hint": "Following the thread through the needle.",
+      "explanation": "Tracing provides visibility into the end-to-end journey of a request in a microservices architecture."
+    },
+    {
+      "id": "q10",
+      "type": "FillBlank",
+      "prompt": "If you don't have observability, you are 'flying ____' and won't know there is a problem until users complain.",
+      "answer": "blind",
+      "accepted": [
+        "blind"
+      ],
+      "hint": "Opposite of seeing.",
+      "explanation": "Observability is the difference between proactive and reactive engineering."
+    }
+  ]
+}

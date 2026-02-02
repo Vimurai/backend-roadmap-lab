@@ -1,0 +1,147 @@
+{
+  "lessonId": "15-message-brokers",
+  "title": "Message Brokers: The Post Office",
+  "exercises": [
+    {
+      "id": "q1",
+      "type": "MultipleChoice",
+      "prompt": "What is the role of a 'Producer' in a messaging system?",
+      "choices": [
+        "The service that stores messages forever",
+        "The service that creates and sends messages",
+        "The service that deletes old data",
+        "The user who views the website"
+      ],
+      "answerIndex": 1,
+      "hint": "The one who leaves the message on the answering machine.",
+      "explanation": "A producer is any application or service that publishes messages to a broker."
+    },
+    {
+      "id": "q2",
+      "type": "FillBlank",
+      "prompt": "____ communication allows a service to send a request and move on without waiting for an immediate response.",
+      "answer": "asynchronous",
+      "accepted": [
+        "asynchronous",
+        "async"
+      ],
+      "hint": "Opposite of synchronous.",
+      "explanation": "Asynchronous messaging decouples the timing of the sender and receiver."
+    },
+    {
+      "id": "q3",
+      "type": "MultipleChoice",
+      "prompt": "What is a 'Queue' in a message broker?",
+      "choices": [
+        "A fast database table",
+        "A buffer that stores messages until they can be processed",
+        "A list of all users in the system",
+        "A way to sort files"
+      ],
+      "answerIndex": 1,
+      "hint": "The waiting room for messages.",
+      "explanation": "Queues hold messages until a consumer is ready to process them."
+    },
+    {
+      "id": "q4",
+      "type": "ArrangeTokens",
+      "prompt": "Arrange the path of a message in a standard queue system.",
+      "tokens": [
+        "Producer",
+        "Broker/Queue",
+        "Consumer"
+      ],
+      "answer": [
+        "Producer",
+        "Broker/Queue",
+        "Consumer"
+      ],
+      "hint": "Sender, Buffer, Receiver.",
+      "explanation": "Messages flow from the producer, stay in the broker, and are eventually taken by the consumer."
+    },
+    {
+      "id": "q5",
+      "type": "FillBlank",
+      "prompt": "____ stands for Publisher/Subscriber, a pattern where one message can be sent to many interested listeners.",
+      "answer": "pub/sub",
+      "accepted": [
+        "pub/sub",
+        "pubsub"
+      ],
+      "hint": "Shortened names of the two roles.",
+      "explanation": "Pub/Sub allows for broadcasting messages to multiple consumers simultaneously."
+    },
+    {
+      "id": "q6",
+      "type": "MultipleChoice",
+      "prompt": "What is a 'Dead Letter Queue' (DLQ)?",
+      "choices": [
+        "A queue for deleted users",
+        "A place where messages that failed to be processed are sent",
+        "A list of expired passwords",
+        "A backup of the entire database"
+      ],
+      "answerIndex": 1,
+      "hint": "Where 'dead' or broken messages go for inspection.",
+      "explanation": "DLQs are used to isolate problematic messages so they don't block the main queue."
+    },
+    {
+      "id": "q7",
+      "type": "FillBlank",
+      "prompt": "____ is a popular message broker known for high-performance streaming and log-based storage.",
+      "answer": "kafka",
+      "accepted": [
+        "kafka",
+        "apache kafka"
+      ],
+      "hint": "Named after a famous author.",
+      "explanation": "Kafka is designed for high-throughput, fault-tolerant streaming of events."
+    },
+    {
+      "id": "q8",
+      "type": "ArrangeTokens",
+      "prompt": "Build a message object for an 'OrderPlaced' event.",
+      "tokens": [
+        "{",
+        "\"orderId\": 456,",
+        "\"status\": \"Placed\",",
+        "\"total\": 99.99",
+        "}"
+      ],
+      "answer": [
+        "{",
+        "\"orderId\": 456,",
+        "\"status\": \"Placed\",",
+        "\"total\": 99.99",
+        "}"
+      ],
+      "hint": "Standard JSON structure.",
+      "explanation": "Messages are typically JSON payloads containing relevant data for the consumer."
+    },
+    {
+      "id": "q9",
+      "type": "MultipleChoice",
+      "prompt": "Why use a Message Broker for sending emails instead of a direct API call?",
+      "choices": [
+        "It makes the email arrive faster",
+        "If the email service is down, the message stays in the queue and retries later",
+        "It is required by law",
+        "It uses less internet data"
+      ],
+      "answerIndex": 1,
+      "hint": "Consider what happens if the 'Consumer' is down for 10 minutes.",
+      "explanation": "Brokers provide resilience by decoupling the success of your app from the availability of external services."
+    },
+    {
+      "id": "q10",
+      "type": "FillBlank",
+      "prompt": "The service that listens for and processes messages from a queue is called a ____.",
+      "answer": "consumer",
+      "accepted": [
+        "consumer"
+      ],
+      "hint": "The one who 'eats' the message.",
+      "explanation": "Consumers are responsible for the business logic that reacts to the messages."
+    }
+  ]
+}

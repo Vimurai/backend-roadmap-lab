@@ -1,0 +1,149 @@
+{
+  "lessonId": "06-auth-and-security",
+  "title": "Auth and Security: The VIP Club",
+  "exercises": [
+    {
+      "id": "q1",
+      "type": "MultipleChoice",
+      "prompt": "What is 'Authentication'?",
+      "choices": [
+        "Checking what actions you can perform",
+        "Proving who you are (The Passport)",
+        "Encrypting the database",
+        "Buying a website domain"
+      ],
+      "answerIndex": 1,
+      "hint": "Think of the passport check at the airport.",
+      "explanation": "Authentication (AuthN) is the process of verifying a user's identity."
+    },
+    {
+      "id": "q2",
+      "type": "FillBlank",
+      "prompt": "____ is the process of proving you have permission to access a specific resource (The VIP Wristband).",
+      "answer": "authorization",
+      "accepted": [
+        "authorization",
+        "authz"
+      ],
+      "hint": "It starts with A and ends with Z.",
+      "explanation": "Authorization (AuthZ) determines what an authenticated user is allowed to do."
+    },
+    {
+      "id": "q3",
+      "type": "MultipleChoice",
+      "prompt": "Why should we store password 'hashes' instead of plain text?",
+      "choices": [
+        "Hashes take up less disk space",
+        "Hashes make the website load faster",
+        "If the database is stolen, the actual passwords remain unknown",
+        "Hashes are required by the C# compiler"
+      ],
+      "answerIndex": 2,
+      "hint": "Think about what happens if a hacker gets into the safe.",
+      "explanation": "Hashing is a one-way process; storing hashes protects users even if data is leaked."
+    },
+    {
+      "id": "q4",
+      "type": "ArrangeTokens",
+      "prompt": "Arrange the three parts of a JWT (JSON Web Token) in order.",
+      "tokens": [
+        "Header",
+        ".",
+        "Payload",
+        ".",
+        "Signature"
+      ],
+      "answer": [
+        "Header",
+        ".",
+        "Payload",
+        ".",
+        "Signature"
+      ],
+      "hint": "Metadata, then Data, then Security Check.",
+      "explanation": "A JWT consists of a Header (algorithm), a Payload (claims), and a Signature (verification)."
+    },
+    {
+      "id": "q5",
+      "type": "FillBlank",
+      "prompt": "A ____ is a random string added to a password before hashing to prevent identical passwords from having identical hashes.",
+      "answer": "salt",
+      "accepted": [
+        "salt"
+      ],
+      "hint": "Like seasoning for food.",
+      "explanation": "Salting ensures that even if two users have the same password, their hashes will be different."
+    },
+    {
+      "id": "q6",
+      "type": "MultipleChoice",
+      "prompt": "What does JWT stand for?",
+      "choices": [
+        "Java Website Ticket",
+        "JSON Web Token",
+        "Joint Web Technology",
+        "Just Write Text"
+      ],
+      "answerIndex": 1,
+      "hint": "It uses the JSON format we learned in APIs.",
+      "explanation": "JWT stands for JSON Web Token, a compact way to securely transmit information."
+    },
+    {
+      "id": "q7",
+      "type": "FillBlank",
+      "prompt": "____ is a security mechanism that allows a server to decide which domains are allowed to make requests to it.",
+      "answer": "cors",
+      "accepted": [
+        "cors"
+      ],
+      "hint": "Cross-Origin Resource Sharing.",
+      "explanation": "CORS (Cross-Origin Resource Sharing) prevents malicious sites from accessing your API from a browser."
+    },
+    {
+      "id": "q8",
+      "type": "ArrangeTokens",
+      "prompt": "Order the login flow from client to server.",
+      "tokens": [
+        "User enters Password",
+        "Client sends POST /login",
+        "Server verifies Hash",
+        "Server returns JWT"
+      ],
+      "answer": [
+        "User enters Password",
+        "Client sends POST /login",
+        "Server verifies Hash",
+        "Server returns JWT"
+      ],
+      "hint": "Start with the user's action.",
+      "explanation": "The user provides credentials, the server validates them, and issues a token for future requests."
+    },
+    {
+      "id": "q9",
+      "type": "MultipleChoice",
+      "prompt": "What is the main difference between Hashing and Encryption?",
+      "choices": [
+        "Hashing is faster",
+        "Encryption is for numbers, Hashing is for text",
+        "Hashing is one-way, Encryption is two-way (can be decrypted)",
+        "There is no difference"
+      ],
+      "answerIndex": 2,
+      "hint": "Can you unscramble the egg?",
+      "explanation": "Hashing cannot be reversed, while Encryption is designed to be decrypted with a key."
+    },
+    {
+      "id": "q10",
+      "type": "FillBlank",
+      "prompt": "You should never trust the ____; always verify permissions on the server.",
+      "answer": "client",
+      "accepted": [
+        "client",
+        "user",
+        "browser"
+      ],
+      "hint": "The one making the request.",
+      "explanation": "Security must be enforced on the server because clients can be manipulated."
+    }
+  ]
+}

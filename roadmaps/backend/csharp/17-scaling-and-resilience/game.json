@@ -1,0 +1,142 @@
+{
+  "lessonId": "17-scaling-and-resilience",
+  "title": "Scaling & Resilience: The Multi-Lane Highway",
+  "exercises": [
+    {
+      "id": "q1",
+      "type": "MultipleChoice",
+      "prompt": "What is 'Vertical Scaling'?",
+      "choices": [
+        "Adding more servers to the network",
+        "Adding more power (CPU, RAM) to a single server",
+        "Building a taller office building",
+        "Writing longer lines of code"
+      ],
+      "answerIndex": 1,
+      "hint": "Making the bridge wider.",
+      "explanation": "Vertical scaling (scaling up) means increasing the resources of an existing server."
+    },
+    {
+      "id": "q2",
+      "type": "FillBlank",
+      "prompt": "____ Scaling involves adding more instances of a server to handle traffic.",
+      "answer": "horizontal",
+      "accepted": [
+        "horizontal"
+      ],
+      "hint": "Building another bridge.",
+      "explanation": "Horizontal scaling (scaling out) is generally preferred for large systems because it's more flexible."
+    },
+    {
+      "id": "q3",
+      "type": "MultipleChoice",
+      "prompt": "What does a 'Load Balancer' do?",
+      "choices": [
+        "It makes the database faster",
+        "It distributes incoming traffic across multiple servers",
+        "It deletes unused files",
+        "It recharges the server batteries"
+      ],
+      "answerIndex": 1,
+      "hint": "The 'Traffic Cop' at the bridge.",
+      "explanation": "Load balancers ensure that no single server becomes overwhelmed by distributing the workload."
+    },
+    {
+      "id": "q4",
+      "type": "ArrangeTokens",
+      "prompt": "Arrange the states of a 'Circuit Breaker' in order.",
+      "tokens": [
+        "Closed (Normal)",
+        "Open (Failing)",
+        "Half-Open (Testing)"
+      ],
+      "answer": [
+        "Closed (Normal)",
+        "Open (Failing)",
+        "Half-Open (Testing)"
+      ],
+      "hint": "Start with everything working normally.",
+      "explanation": "A circuit breaker prevents requests to a failing service (Open) and eventually tests if it's back (Half-Open)."
+    },
+    {
+      "id": "q5",
+      "type": "FillBlank",
+      "prompt": "A ____ Point of Failure (SPOF) is a part of a system that, if it fails, will stop the entire system from working.",
+      "answer": "single",
+      "accepted": [
+        "single"
+      ],
+      "hint": "One only.",
+      "explanation": "Removing SPOFs is key to building highly available systems."
+    },
+    {
+      "id": "q6",
+      "type": "MultipleChoice",
+      "prompt": "What is 'Rate Limiting'?",
+      "choices": [
+        "Stopping all traffic at night",
+        "Limiting the number of requests a user can make in a time period",
+        "Making the internet slower",
+        "Charging users per click"
+      ],
+      "answerIndex": 1,
+      "hint": "Only allowing 5 cars per minute.",
+      "explanation": "Rate limiting protects your services from being overwhelmed by too many requests from a single source."
+    },
+    {
+      "id": "q7",
+      "type": "FillBlank",
+      "prompt": "Graceful ____ is when a system continues to function with reduced features when a component fails.",
+      "answer": "degradation",
+      "accepted": [
+        "degradation"
+      ],
+      "hint": "Starts with D.",
+      "explanation": "For example, if the 'Recommendations' service fails, the 'Store' still shows products."
+    },
+    {
+      "id": "q8",
+      "type": "ArrangeTokens",
+      "prompt": "Order the steps of a 'Cascading Failure'.",
+      "tokens": [
+        "One service fails",
+        "Traffic shifts to others",
+        "Others get overloaded",
+        "Whole system crashes"
+      ],
+      "answer": [
+        "One service fails",
+        "Traffic shifts to others",
+        "Others get overloaded",
+        "Whole system crashes"
+      ],
+      "hint": "The domino effect.",
+      "explanation": "Cascading failures occur when the failure of one part increases the load on others until they also fail."
+    },
+    {
+      "id": "q9",
+      "type": "MultipleChoice",
+      "prompt": "Why is 'Resilience' important in backend engineering?",
+      "choices": [
+        "It makes the code look prettier",
+        "It ensures the system stays up even when parts fail",
+        "It's required for some certifications",
+        "It saves money on servers"
+      ],
+      "answerIndex": 1,
+      "hint": "Failure is inevitable; how do you handle it?",
+      "explanation": "Resilient systems are designed to handle failures gracefully without complete outages."
+    },
+    {
+      "id": "q10",
+      "type": "FillBlank",
+      "prompt": "A 'Circuit ____' is a pattern used to detect failures and prevent them from repeating constantly.",
+      "answer": "breaker",
+      "accepted": [
+        "breaker"
+      ],
+      "hint": "Like the electrical switch in your house.",
+      "explanation": "Circuit breakers protect your system by 'breaking' the connection to a failing dependency."
+    }
+  ]
+}

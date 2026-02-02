@@ -1,0 +1,142 @@
+{
+  "lessonId": "01-internet-foundations",
+  "title": "Internet Foundations: The Postal Service",
+  "exercises": [
+    {
+      "id": "q1",
+      "type": "MultipleChoice",
+      "prompt": "Which HTTP verb is best suited for creating a new order in a restaurant app?",
+      "choices": [
+        "GET",
+        "POST",
+        "PUT",
+        "DELETE"
+      ],
+      "answerIndex": 1,
+      "hint": "Think 'Create'.",
+      "explanation": "POST is used to send data to the server to create a new resource."
+    },
+    {
+      "id": "q2",
+      "type": "FillBlank",
+      "prompt": "DNS stands for Domain ____ System.",
+      "answer": "name",
+      "accepted": [
+        "name"
+      ],
+      "hint": "It turns google.com into an IP address.",
+      "explanation": "DNS (Domain Name System) acts like an address book for the internet."
+    },
+    {
+      "id": "q3",
+      "type": "MultipleChoice",
+      "prompt": "You receive a 404 status code. What does this mean?",
+      "choices": [
+        "The server is on fire (Error)",
+        "The request was successful",
+        "The page or resource was not found",
+        "You are not logged in"
+      ],
+      "answerIndex": 2,
+      "hint": "The waiter can't find table 99.",
+      "explanation": "404 Not Found means the server couldn't locate the requested resource."
+    },
+    {
+      "id": "q4",
+      "type": "ArrangeTokens",
+      "prompt": "Arrange the HTTP interaction steps in the correct order.",
+      "tokens": [
+        "Client sends Request",
+        "Server processes Ticket",
+        "Server sends Response",
+        "Browser displays Content"
+      ],
+      "answer": [
+        "Client sends Request",
+        "Server processes Ticket",
+        "Server sends Response",
+        "Browser displays Content"
+      ],
+      "hint": "The customer asks before the waiter serves.",
+      "explanation": "The flow always starts with a client request and ends with a server response displayed to the user."
+    },
+    {
+      "id": "q5",
+      "type": "FillBlank",
+      "prompt": "A standard, non-secure HTTP request usually runs on port ____.",
+      "answer": "80",
+      "accepted": [
+        "80"
+      ],
+      "hint": "It's a two-digit number.",
+      "explanation": "Port 80 is the default for HTTP, while 443 is used for secure HTTPS."
+    },
+    {
+      "id": "q6",
+      "type": "MultipleChoice",
+      "prompt": "What is 'localhost'?",
+      "choices": [
+        "A server in your local city",
+        "A way to access your own computer",
+        "A private internet for developers",
+        "A specific brand of router"
+      ],
+      "answerIndex": 1,
+      "hint": "The GPS coordinates of your own house.",
+      "explanation": "Localhost refers to the computer you are currently using, often mapped to IP 127.0.0.1."
+    },
+    {
+      "id": "q7",
+      "type": "FillBlank",
+      "prompt": "The status code ____ OK means the request was successful.",
+      "answer": "200",
+      "accepted": [
+        "200"
+      ],
+      "hint": "The standard success code.",
+      "explanation": "200 OK is the standard response for successful HTTP requests."
+    },
+    {
+      "id": "q8",
+      "type": "ArrangeTokens",
+      "prompt": "Build a curl command to see only the headers of google.com.",
+      "tokens": [
+        "curl",
+        "-I",
+        "https://google.com"
+      ],
+      "answer": [
+        "curl",
+        "-I",
+        "https://google.com"
+      ],
+      "hint": "The flag for 'Information/Headers' is a capital letter.",
+      "explanation": "The -I flag (or --head) tells curl to fetch only the HTTP headers."
+    },
+    {
+      "id": "q9",
+      "type": "MultipleChoice",
+      "prompt": "Which component is responsible for 'serving' the plate of food in the analogy?",
+      "choices": [
+        "The Client",
+        "The Browser",
+        "The Server",
+        "The DNS"
+      ],
+      "answerIndex": 2,
+      "hint": "It's the kitchen.",
+      "explanation": "The Server processes the request and serves the response."
+    },
+    {
+      "id": "q10",
+      "type": "FillBlank",
+      "prompt": "To replace an existing order entirely, you should use the ____ HTTP verb.",
+      "answer": "put",
+      "accepted": [
+        "put"
+      ],
+      "hint": "Starts with P and has 3 letters.",
+      "explanation": "PUT is used to replace an existing resource with new data."
+    }
+  ]
+}

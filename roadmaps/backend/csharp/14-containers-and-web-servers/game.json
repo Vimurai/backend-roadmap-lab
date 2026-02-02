@@ -1,0 +1,142 @@
+{
+  "lessonId": "14-containers-and-web-servers",
+  "title": "Containers & Web Servers: The Shipping Container",
+  "exercises": [
+    {
+      "id": "q1",
+      "type": "MultipleChoice",
+      "prompt": "What is 'Docker' in the context of backend development?",
+      "choices": [
+        "A database for storing images",
+        "A platform for packaging and running applications in containers",
+        "A new programming language",
+        "A tool for editing photos"
+      ],
+      "answerIndex": 1,
+      "hint": "Think of the standard shipping container for code.",
+      "explanation": "Docker allows you to bundle an app with all its dependencies into a single unit called a container."
+    },
+    {
+      "id": "q2",
+      "type": "FillBlank",
+      "prompt": "A Docker ____ is a read-only template or snapshot used to create containers.",
+      "answer": "image",
+      "accepted": [
+        "image"
+      ],
+      "hint": "The 'blueprint'.",
+      "explanation": "An image contains the code, runtime, libraries, and environment variables needed to run an app."
+    },
+    {
+      "id": "q3",
+      "type": "MultipleChoice",
+      "prompt": "What is the difference between a Container and a Virtual Machine (VM)?",
+      "choices": [
+        "Containers are larger and slower",
+        "Containers share the host OS kernel, making them lightweight",
+        "VMs don't need an operating system",
+        "There is no difference"
+      ],
+      "answerIndex": 1,
+      "hint": "Containers share the computer's 'brain'.",
+      "explanation": "Containers are more efficient than VMs because they don't include a full guest operating system."
+    },
+    {
+      "id": "q4",
+      "type": "ArrangeTokens",
+      "prompt": "Arrange the steps to get a Dockerized app running.",
+      "tokens": [
+        "Write Dockerfile",
+        "Build Image",
+        "Run Container"
+      ],
+      "answer": [
+        "Write Dockerfile",
+        "Build Image",
+        "Run Container"
+      ],
+      "hint": "Script, Snapshot, Instance.",
+      "explanation": "You first define the environment, create the snapshot, and then start a running instance."
+    },
+    {
+      "id": "q5",
+      "type": "FillBlank",
+      "prompt": "The file used to define the steps to build a Docker image is named '____'.",
+      "answer": "Dockerfile",
+      "accepted": [
+        "Dockerfile"
+      ],
+      "hint": "One word, starts with D.",
+      "explanation": "A Dockerfile is a text document that contains all the commands a user could call to assemble an image."
+    },
+    {
+      "id": "q6",
+      "type": "MultipleChoice",
+      "prompt": "What is 'Docker Compose' used for?",
+      "choices": [
+        "Writing C# code",
+        "Defining and running multi-container applications",
+        "Editing Docker images",
+        "Designing website logos"
+      ],
+      "answerIndex": 1,
+      "hint": "Managing multiple 'containers' at once.",
+      "explanation": "Docker Compose uses a YAML file to configure your application's services (DB, API, Cache, etc.)."
+    },
+    {
+      "id": "q7",
+      "type": "FillBlank",
+      "prompt": "A ____ Proxy (like Nginx) sits in front of your web server to direct traffic and add security.",
+      "answer": "reverse",
+      "accepted": [
+        "reverse"
+      ],
+      "hint": "The security guard at the front door.",
+      "explanation": "Reverse proxies handle tasks like SSL termination, load balancing, and request routing."
+    },
+    {
+      "id": "q8",
+      "type": "ArrangeTokens",
+      "prompt": "Build a command to run a container from the 'nginx' image and map port 8080 to 80.",
+      "tokens": [
+        "docker run",
+        "-p",
+        "8080:80",
+        "nginx"
+      ],
+      "answer": [
+        "docker run",
+        "-p",
+        "8080:80",
+        "nginx"
+      ],
+      "hint": "Action, Port flag, Mapping (Host:Container), Image name.",
+      "explanation": "Port mapping allows external traffic to reach a service running inside a container."
+    },
+    {
+      "id": "q9",
+      "type": "MultipleChoice",
+      "prompt": "In .NET, what is 'Kestrel'?",
+      "choices": [
+        "A type of bird",
+        "The cross-platform web server included with ASP.NET Core",
+        "A tool for database migrations",
+        "A JavaScript framework"
+      ],
+      "answerIndex": 1,
+      "hint": "It's the server that actually runs your C# API code.",
+      "explanation": "Kestrel is a lightweight, high-performance web server that powers .NET applications."
+    },
+    {
+      "id": "q10",
+      "type": "FillBlank",
+      "prompt": "A Docker ____ allows you to persist data even after a container is deleted.",
+      "answer": "volume",
+      "accepted": [
+        "volume"
+      ],
+      "hint": "Like a hard drive plugged into the container.",
+      "explanation": "Volumes are the preferred mechanism for persisting data generated by and used by Docker containers."
+    }
+  ]
+}

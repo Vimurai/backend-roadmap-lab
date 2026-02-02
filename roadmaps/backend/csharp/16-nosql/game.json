@@ -1,0 +1,146 @@
+{
+  "lessonId": "16-nosql",
+  "title": "NoSQL: The Notebook",
+  "exercises": [
+    {
+      "id": "q1",
+      "type": "MultipleChoice",
+      "prompt": "What is the primary characteristic of 'NoSQL' databases?",
+      "choices": [
+        "They don't use disks",
+        "They use flexible schemas instead of rigid tables",
+        "They are only for small amounts of data",
+        "They don't support C#"
+      ],
+      "answerIndex": 1,
+      "hint": "Think of the 'Scrapbook' analogy.",
+      "explanation": "NoSQL databases allow for storing unstructured or semi-structured data without a fixed schema."
+    },
+    {
+      "id": "q2",
+      "type": "FillBlank",
+      "prompt": "____ Scaling is the process of adding more machines to a system to handle more load, rather than making one machine bigger.",
+      "answer": "horizontal",
+      "accepted": [
+        "horizontal"
+      ],
+      "hint": "Adding more boxes side-by-side.",
+      "explanation": "NoSQL databases are often designed to scale horizontally across many servers."
+    },
+    {
+      "id": "q3",
+      "type": "MultipleChoice",
+      "prompt": "What does the 'CAP Theorem' state?",
+      "choices": [
+        "You can only have two: Consistency, Availability, or Partition Tolerance",
+        "Computers Always Perform",
+        "Every database must be Acid-compliant",
+        "NoSQL is always better than SQL"
+      ],
+      "answerIndex": 0,
+      "hint": "C-A-P.",
+      "explanation": "The CAP theorem highlights the trade-offs in distributed data stores."
+    },
+    {
+      "id": "q4",
+      "type": "ArrangeTokens",
+      "prompt": "Arrange the parts of the CAP acronym.",
+      "tokens": [
+        "Consistency",
+        "Availability",
+        "Partition Tolerance"
+      ],
+      "answer": [
+        "Consistency",
+        "Availability",
+        "Partition Tolerance"
+      ],
+      "hint": "C, A, P.",
+      "explanation": "In a distributed system, you can only guarantee two out of these three properties at the same time."
+    },
+    {
+      "id": "q5",
+      "type": "FillBlank",
+      "prompt": "____ is a popular NoSQL database that stores data in JSON-like documents.",
+      "answer": "mongodb",
+      "accepted": [
+        "mongodb",
+        "mongo"
+      ],
+      "hint": "Starts with M.",
+      "explanation": "MongoDB is a leading document-oriented database."
+    },
+    {
+      "id": "q6",
+      "type": "MultipleChoice",
+      "prompt": "What is a 'Document Store'?",
+      "choices": [
+        "A place to store PDF files",
+        "A database where each record is a self-contained document (usually JSON)",
+        "A folder on your desktop",
+        "A physical library"
+      ],
+      "answerIndex": 1,
+      "hint": "Page 1 has a photo, Page 2 has a ticket stub.",
+      "explanation": "Document stores allow for complex, nested data structures in a single record."
+    },
+    {
+      "id": "q7",
+      "type": "FillBlank",
+      "prompt": "NoSQL databases often follow ____ consistency (BASE), which means data will eventually be the same across all nodes.",
+      "answer": "eventual",
+      "accepted": [
+        "eventual"
+      ],
+      "hint": "It will happen 'eventually'.",
+      "explanation": "Eventual consistency allows for higher availability by not requiring immediate synchronization."
+    },
+    {
+      "id": "q8",
+      "type": "ArrangeTokens",
+      "prompt": "Build a simple JSON document for a NoSQL store.",
+      "tokens": [
+        "{",
+        "\"_id\": \"u1\",",
+        "\"name\": \"Alice\",",
+        "\"hobbies\": [\"reading\", \"coding\"]",
+        "}"
+      ],
+      "answer": [
+        "{",
+        "\"_id\": \"u1\",",
+        "\"name\": \"Alice\",",
+        "\"hobbies\": [\"reading\", \"coding\"]",
+        "}"
+      ],
+      "hint": "Key-value pairs with an array.",
+      "explanation": "JSON documents can store nested data like arrays, which is hard to do in traditional SQL."
+    },
+    {
+      "id": "q9",
+      "type": "MultipleChoice",
+      "prompt": "What is the 'BASE' model in NoSQL?",
+      "choices": [
+        "Basic Availability, Soft state, Eventual consistency",
+        "A type of database hardware",
+        "The opposite of an Acid-trip",
+        "Build, Analyze, Store, Execute"
+      ],
+      "answerIndex": 0,
+      "hint": "It's the NoSQL equivalent of ACID.",
+      "explanation": "BASE focuses on availability and performance over strict immediate consistency."
+    },
+    {
+      "id": "q10",
+      "type": "FillBlank",
+      "prompt": "A ____ Store (like Redis) is the simplest type of NoSQL database, storing data as a collection of unique keys and values.",
+      "answer": "key-value",
+      "accepted": [
+        "key-value",
+        "key value"
+      ],
+      "hint": "Like a C# Dictionary.",
+      "explanation": "Key-value stores are extremely fast for simple data lookups."
+    }
+  ]
+}

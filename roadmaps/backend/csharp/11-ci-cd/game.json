@@ -1,0 +1,143 @@
+{
+  "lessonId": "11-ci-cd",
+  "title": "CI/CD: The Factory Assembly Line",
+  "exercises": [
+    {
+      "id": "q1",
+      "type": "MultipleChoice",
+      "prompt": "What does CI stand for?",
+      "choices": [
+        "Code Intelligence",
+        "Continuous Integration",
+        "Centralized Instance",
+        "Computed Information"
+      ],
+      "answerIndex": 1,
+      "hint": "Integrating code continuously.",
+      "explanation": "Continuous Integration is the practice of merging code changes into a shared repository frequently."
+    },
+    {
+      "id": "q2",
+      "type": "FillBlank",
+      "prompt": "The sequence of automated steps in CI/CD is called a ____.",
+      "answer": "pipeline",
+      "accepted": [
+        "pipeline"
+      ],
+      "hint": "Like a pipe flowing from one stage to another.",
+      "explanation": "A pipeline consists of steps like Build, Test, and Deploy that run automatically."
+    },
+    {
+      "id": "q3",
+      "type": "MultipleChoice",
+      "prompt": "In the Car Factory analogy, what is Continuous Deployment?",
+      "choices": [
+        "Checking the parts for quality",
+        "Automatically driving the car to the dealership",
+        "Designing the car blueprints",
+        "Hiring new workers"
+      ],
+      "answerIndex": 1,
+      "hint": "Shipping the final product without manual steps.",
+      "explanation": "Continuous Deployment ensures that every change that passes tests is automatically released to production."
+    },
+    {
+      "id": "q4",
+      "type": "ArrangeTokens",
+      "prompt": "Arrange the standard CI/CD pipeline stages in order.",
+      "tokens": [
+        "Build",
+        "Test",
+        "Deploy"
+      ],
+      "answer": [
+        "Build",
+        "Test",
+        "Deploy"
+      ],
+      "hint": "Compile, verify, then ship.",
+      "explanation": "You must first ensure code compiles, then that it works, before sending it to users."
+    },
+    {
+      "id": "q5",
+      "type": "FillBlank",
+      "prompt": "____ is the standard format for writing CI/CD configuration files.",
+      "answer": "yaml",
+      "accepted": [
+        "yaml",
+        "yml"
+      ],
+      "hint": "4 letters, often used for GitHub Actions.",
+      "explanation": "YAML is a human-readable data serialization language used for configuration."
+    },
+    {
+      "id": "q6",
+      "type": "MultipleChoice",
+      "prompt": "What is an 'Artifact' in CI/CD?",
+      "choices": [
+        "A piece of history from the old office",
+        "The compiled package or binary ready for deployment",
+        "A bug that was fixed long ago",
+        "The original source code"
+      ],
+      "answerIndex": 1,
+      "hint": "The 'Compiled Package'.",
+      "explanation": "Artifacts are the files produced by a build process that are used in later stages (like testing or deployment)."
+    },
+    {
+      "id": "q7",
+      "type": "FillBlank",
+      "prompt": "The '____' environment is a copy of production used for final testing before going live.",
+      "answer": "staging",
+      "accepted": [
+        "staging"
+      ],
+      "hint": "The test track.",
+      "explanation": "Staging allows for realistic testing in an environment that mimics production."
+    },
+    {
+      "id": "q8",
+      "type": "ArrangeTokens",
+      "prompt": "What happens if a test fails in the CI pipeline?",
+      "tokens": [
+        "Pipeline Stops",
+        "Developer Notified",
+        "Bug Fixed",
+        "Restart Pipeline"
+      ],
+      "answer": [
+        "Pipeline Stops",
+        "Developer Notified",
+        "Bug Fixed",
+        "Restart Pipeline"
+      ],
+      "hint": "Failing early stops the flow.",
+      "explanation": "CI pipelines should fail immediately if any step (like testing) fails to prevent bad code from progressing."
+    },
+    {
+      "id": "q9",
+      "type": "MultipleChoice",
+      "prompt": "What is the main benefit of CI/CD?",
+      "choices": [
+        "It makes the code easier to write",
+        "It reduces manual errors and increases deployment speed",
+        "It allows you to delete the testing folder",
+        "It makes the internet faster"
+      ],
+      "answerIndex": 1,
+      "hint": "Automate the boring, secure the quality.",
+      "explanation": "Automation removes human error from the build and release process, making it more reliable and frequent."
+    },
+    {
+      "id": "q10",
+      "type": "FillBlank",
+      "prompt": "Continuous ____ (CD) usually refers to an automated release that requires manual approval to go to production.",
+      "answer": "delivery",
+      "accepted": [
+        "delivery"
+      ],
+      "hint": "The other 'D' in CD.",
+      "explanation": "Continuous Delivery means code is always in a deployable state, but the final push to production may be manual."
+    }
+  ]
+}

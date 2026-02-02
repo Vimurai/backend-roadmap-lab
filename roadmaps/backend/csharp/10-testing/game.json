@@ -1,0 +1,148 @@
+{
+  "lessonId": "10-testing",
+  "title": "Testing: The Safety Net",
+  "exercises": [
+    {
+      "id": "q1",
+      "type": "MultipleChoice",
+      "prompt": "What is a 'Unit Test'?",
+      "choices": [
+        "Testing the entire website at once",
+        "Testing a single method or small piece of logic in isolation",
+        "Testing the internet connection",
+        "Testing the database hardware"
+      ],
+      "answerIndex": 1,
+      "hint": "Testing a single LEGO brick.",
+      "explanation": "Unit tests focus on the smallest testable parts of an application."
+    },
+    {
+      "id": "q2",
+      "type": "FillBlank",
+      "prompt": "The 'AAA' pattern in testing stands for Arrange, Act, and ____.",
+      "answer": "assert",
+      "accepted": [
+        "assert"
+      ],
+      "hint": "Verifying the result.",
+      "explanation": "Arrange (setup), Act (execute), Assert (verify)."
+    },
+    {
+      "id": "q3",
+      "type": "MultipleChoice",
+      "prompt": "Why do we use 'Mocking' in unit tests?",
+      "choices": [
+        "To make fun of bad code",
+        "To replace real dependencies (like a DB) with controllable fakes",
+        "To speed up the computer CPU",
+        "To hide the code from users"
+      ],
+      "answerIndex": 1,
+      "hint": "Testing logic without a real connection.",
+      "explanation": "Mocks allow you to isolate the code under test by simulating external dependencies."
+    },
+    {
+      "id": "q4",
+      "type": "ArrangeTokens",
+      "prompt": "Arrange the steps of Test-Driven Development (TDD) in order.",
+      "tokens": [
+        "Red (Write Failing Test)",
+        "Green (Make it Pass)",
+        "Refactor (Clean up Code)"
+      ],
+      "answer": [
+        "Red (Write Failing Test)",
+        "Green (Make it Pass)",
+        "Refactor (Clean up Code)"
+      ],
+      "hint": "Failing test first.",
+      "explanation": "TDD is a cycle of writing a test, implementing the bare minimum to pass, and then cleaning the code."
+    },
+    {
+      "id": "q5",
+      "type": "FillBlank",
+      "prompt": "____ Coverage is a metric that shows how much of your code is executed by tests.",
+      "answer": "code",
+      "accepted": [
+        "code"
+      ],
+      "hint": "Another name for source files.",
+      "explanation": "Code coverage helps identify untested parts of an application."
+    },
+    {
+      "id": "q6",
+      "type": "MultipleChoice",
+      "prompt": "What is an 'Integration Test'?",
+      "choices": [
+        "A test that only runs on the developer's machine",
+        "A test that verifies two or more components work together correctly",
+        "A test for the user interface only",
+        "A test of the computer's motherboard"
+      ],
+      "answerIndex": 1,
+      "hint": "Testing if two bricks fit together.",
+      "explanation": "Integration tests ensure that different modules or services in a system interact as expected."
+    },
+    {
+      "id": "q7",
+      "type": "FillBlank",
+      "prompt": "In xUnit, the attribute used to mark a method as a test case is [____].",
+      "answer": "Fact",
+      "accepted": [
+        "Fact",
+        "Theory"
+      ],
+      "hint": "4 letters, starts with F.",
+      "explanation": "[Fact] is the most common attribute for simple tests in the xUnit framework."
+    },
+    {
+      "id": "q8",
+      "type": "ArrangeTokens",
+      "prompt": "Build a simple xUnit assertion to check if a result is 10.",
+      "tokens": [
+        "Assert",
+        ".Equal(",
+        "10",
+        ",",
+        "result",
+        ");"
+      ],
+      "answer": [
+        "Assert",
+        ".Equal(",
+        "10",
+        ",",
+        "result",
+        ");"
+      ],
+      "hint": "The class name, method, expected value, then actual value.",
+      "explanation": "Assert.Equal compares an expected value with the actual result of an operation."
+    },
+    {
+      "id": "q9",
+      "type": "MultipleChoice",
+      "prompt": "What is the primary benefit of automated testing?",
+      "choices": [
+        "It makes the code run faster in production",
+        "It prevents regressions (breaking old features) during changes",
+        "It allows you to skip writing documentation",
+        "It fixes the bugs automatically"
+      ],
+      "answerIndex": 1,
+      "hint": "Think about bugs appearing tomorrow.",
+      "explanation": "Automated tests provide confidence when refactoring or adding new features."
+    },
+    {
+      "id": "q10",
+      "type": "FillBlank",
+      "prompt": "Writing tests *before* writing the actual code is a key part of ____.",
+      "answer": "tdd",
+      "accepted": [
+        "tdd",
+        "test-driven development"
+      ],
+      "hint": "3-letter acronym.",
+      "explanation": "Test-Driven Development (TDD) flips the traditional coding process to focus on requirements first."
+    }
+  ]
+}

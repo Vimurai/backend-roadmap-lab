@@ -1,0 +1,143 @@
+{
+  "lessonId": "08-orm-ef-core",
+  "title": "ORM & EF Core: The Universal Translator",
+  "exercises": [
+    {
+      "id": "q1",
+      "type": "MultipleChoice",
+      "prompt": "What does ORM stand for?",
+      "choices": [
+        "Object-Relational Mapper",
+        "Operational Resource Manager",
+        "Online Repository Maker",
+        "Object-Reference Model"
+      ],
+      "answerIndex": 0,
+      "hint": "It maps 'Objects' to 'Relational' databases.",
+      "explanation": "An ORM maps database tables to C# classes and vice-versa."
+    },
+    {
+      "id": "q2",
+      "type": "FillBlank",
+      "prompt": "In EF Core, the class that coordinates with the database is called the ____Context.",
+      "answer": "db",
+      "accepted": [
+        "db",
+        "database"
+      ],
+      "hint": "The 'DB' context.",
+      "explanation": "The DbContext class is the primary class that interacts with the database in EF Core."
+    },
+    {
+      "id": "q3",
+      "type": "MultipleChoice",
+      "prompt": "What are 'Migrations' used for in EF Core?",
+      "choices": [
+        "Moving the database to a new server",
+        "Tracking and applying changes to the database schema",
+        "Translating C# into Python",
+        "Deleting old logs"
+      ],
+      "answerIndex": 1,
+      "hint": "Think of it as 'Version Control' for your database structure.",
+      "explanation": "Migrations provide a way to incrementally update the database schema to keep it in sync with the application's data model."
+    },
+    {
+      "id": "q4",
+      "type": "ArrangeTokens",
+      "prompt": "Arrange the command to add a new migration named 'InitialCreate'.",
+      "tokens": [
+        "dotnet ef",
+        "migrations",
+        "add",
+        "InitialCreate"
+      ],
+      "answer": [
+        "dotnet ef",
+        "migrations",
+        "add",
+        "InitialCreate"
+      ],
+      "hint": "Tool name, subcommand, action, name.",
+      "explanation": "The 'dotnet ef migrations add' command creates a new migration file."
+    },
+    {
+      "id": "q5",
+      "type": "FillBlank",
+      "prompt": "____ allows you to write queries in C# that are later translated into SQL.",
+      "answer": "linq",
+      "accepted": [
+        "linq"
+      ],
+      "hint": "Language Integrated Query.",
+      "explanation": "LINQ (Language Integrated Query) provides a consistent way to query various data sources using C# syntax."
+    },
+    {
+      "id": "q6",
+      "type": "MultipleChoice",
+      "prompt": "What is the 'N+1 Problem' in ORMs?",
+      "choices": [
+        "A bug that adds 1 to every number",
+        "Making too many separate database requests for related data",
+        "A math error in the C# compiler",
+        "When the database runs out of space"
+      ],
+      "answerIndex": 1,
+      "hint": "Making 100 trips when you only needed one.",
+      "explanation": "The N+1 problem occurs when an application makes N additional queries to fetch related data for each record in the main query result."
+    },
+    {
+      "id": "q7",
+      "type": "FillBlank",
+      "prompt": "The process of loading related data immediately as part of the initial query is called ____ loading.",
+      "answer": "eager",
+      "accepted": [
+        "eager"
+      ],
+      "hint": "Opposite of lazy.",
+      "explanation": "Eager loading (using .Include()) tells EF Core to fetch related entities along with the main entity in one query."
+    },
+    {
+      "id": "q8",
+      "type": "ArrangeTokens",
+      "prompt": "Order the LINQ operations to find a user by email.",
+      "tokens": [
+        "context.Users",
+        ".Where(u => u.Email == 'test@test.com')",
+        ".FirstOrDefault();"
+      ],
+      "answer": [
+        "context.Users",
+        ".Where(u => u.Email == 'test@test.com')",
+        ".FirstOrDefault();"
+      ],
+      "hint": "Table, filter, then take the first result.",
+      "explanation": "LINQ queries typically start with the collection, apply filters, and then use an execution method like FirstOrDefault."
+    },
+    {
+      "id": "q9",
+      "type": "MultipleChoice",
+      "prompt": "In the 'Code-First' approach, how do you create tables?",
+      "choices": [
+        "By writing SQL CREATE TABLE scripts",
+        "By defining C# classes and running migrations",
+        "By using Excel spreadsheets",
+        "The database creates them automatically without any code"
+      ],
+      "answerIndex": 1,
+      "hint": "You write the 'Code' first.",
+      "explanation": "In Code-First, your C# classes define the database schema, and EF Core handles the SQL generation."
+    },
+    {
+      "id": "q10",
+      "type": "FillBlank",
+      "prompt": "The command to apply all pending migrations to the database is 'dotnet ef database ____'.",
+      "answer": "update",
+      "accepted": [
+        "update"
+      ],
+      "hint": "Make the database current.",
+      "explanation": "The 'database update' command executes the SQL generated by migrations on the actual database."
+    }
+  ]
+}

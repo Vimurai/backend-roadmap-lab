@@ -1,0 +1,145 @@
+{
+  "lessonId": "07-relational-databases",
+  "title": "Relational Databases: The Filing Cabinet",
+  "exercises": [
+    {
+      "id": "q1",
+      "type": "MultipleChoice",
+      "prompt": "In the Filing Cabinet analogy, what does a 'Drawer' represent?",
+      "choices": [
+        "A Database",
+        "A Table",
+        "A Row",
+        "An Index"
+      ],
+      "answerIndex": 1,
+      "hint": "It's a collection of similar folders (records).",
+      "explanation": "A Table is a collection of related data entries consisting of columns and rows."
+    },
+    {
+      "id": "q2",
+      "type": "FillBlank",
+      "prompt": "A ____ Key is a unique identifier for a row within its own table.",
+      "answer": "primary",
+      "accepted": [
+        "primary"
+      ],
+      "hint": "The main key.",
+      "explanation": "A Primary Key uniquely identifies each record in a database table."
+    },
+    {
+      "id": "q3",
+      "type": "MultipleChoice",
+      "prompt": "What is the purpose of a 'Foreign Key'?",
+      "choices": [
+        "To encrypt the data",
+        "To link two tables together",
+        "To speed up searches",
+        "To delete the database"
+      ],
+      "answerIndex": 1,
+      "hint": "Think of a note saying 'See User Folder #402'.",
+      "explanation": "A Foreign Key is a field in one table that refers to the Primary Key in another table, creating a relationship."
+    },
+    {
+      "id": "q4",
+      "type": "ArrangeTokens",
+      "prompt": "Arrange the ACID properties in order.",
+      "tokens": [
+        "Atomicity",
+        "Consistency",
+        "Isolation",
+        "Durability"
+      ],
+      "answer": [
+        "Atomicity",
+        "Consistency",
+        "Isolation",
+        "Durability"
+      ],
+      "hint": "A-C-I-D.",
+      "explanation": "ACID properties ensure that database transactions are processed reliably."
+    },
+    {
+      "id": "q5",
+      "type": "FillBlank",
+      "prompt": "____ is the process of organizing data to reduce redundancy and improve integrity.",
+      "answer": "normalization",
+      "accepted": [
+        "normalization",
+        "normalisation"
+      ],
+      "hint": "Making things 'normal'.",
+      "explanation": "Normalization involves dividing a database into tables and defining relationships to reduce data duplication."
+    },
+    {
+      "id": "q6",
+      "type": "MultipleChoice",
+      "prompt": "What is an 'Index' in a database?",
+      "choices": [
+        "A copy of the entire database",
+        "A special table that speeds up data retrieval",
+        "A way to delete old rows",
+        "The name of the database server"
+      ],
+      "answerIndex": 1,
+      "hint": "Think of the 'Table of Contents' at the start of a book.",
+      "explanation": "An Index is a data structure that improves the speed of data retrieval operations on a table."
+    },
+    {
+      "id": "q7",
+      "type": "FillBlank",
+      "prompt": "SQL stands for Structured ____ Language.",
+      "answer": "query",
+      "accepted": [
+        "query"
+      ],
+      "hint": "It's what you do to find information.",
+      "explanation": "SQL (Structured Query Language) is the standard language for managing relational databases."
+    },
+    {
+      "id": "q8",
+      "type": "ArrangeTokens",
+      "prompt": "Build a simple SQL query to find all users named 'Alice'.",
+      "tokens": [
+        "SELECT *",
+        "FROM Users",
+        "WHERE Name =",
+        "'Alice';"
+      ],
+      "answer": [
+        "SELECT *",
+        "FROM Users",
+        "WHERE Name =",
+        "'Alice';"
+      ],
+      "hint": "What to get, from where, and the condition.",
+      "explanation": "A standard SQL query uses SELECT, FROM, and WHERE clauses."
+    },
+    {
+      "id": "q9",
+      "type": "MultipleChoice",
+      "prompt": "What does 'Atomicity' in ACID guarantee?",
+      "choices": [
+        "The database is very small",
+        "A transaction either succeeds completely or fails completely",
+        "Multiple users can read at once",
+        "The data is stored on an SSD"
+      ],
+      "answerIndex": 1,
+      "hint": "All or nothing.",
+      "explanation": "Atomicity ensures that a transaction is treated as a single 'unit', which either completely happens or doesn't happen at all."
+    },
+    {
+      "id": "q10",
+      "type": "FillBlank",
+      "prompt": "A 'One-to-____' relationship is when one user can have many orders.",
+      "answer": "many",
+      "accepted": [
+        "many"
+      ],
+      "hint": "The opposite of one.",
+      "explanation": "One-to-Many is a common database relationship where a single record in one table is related to multiple records in another."
+    }
+  ]
+}

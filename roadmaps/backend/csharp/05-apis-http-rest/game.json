@@ -1,0 +1,146 @@
+{
+  "lessonId": "05-apis-http-rest",
+  "title": "APIs, HTTP, and REST: The Interface",
+  "exercises": [
+    {
+      "id": "q1",
+      "type": "MultipleChoice",
+      "prompt": "What does API stand for?",
+      "choices": [
+        "Advanced Programming Integration",
+        "Application Programming Interface",
+        "Automated Process Identifier",
+        "All-Purpose Internet"
+      ],
+      "answerIndex": 1,
+      "hint": "It's the 'Interface' that allows two programs to talk to each other.",
+      "explanation": "An API is a set of rules that allow different software entities to communicate."
+    },
+    {
+      "id": "q2",
+      "type": "FillBlank",
+      "prompt": "REST stands for ____ State Transfer.",
+      "answer": "representational",
+      "accepted": [
+        "representational"
+      ],
+      "hint": "It starts with R.",
+      "explanation": "REST (REpresentational State Transfer) is an architectural style for designing networked applications."
+    },
+    {
+      "id": "q3",
+      "type": "MultipleChoice",
+      "prompt": "In REST, what is a 'Resource'?",
+      "choices": [
+        "The server hardware",
+        "An object or piece of data (like a User or Product)",
+        "The speed of the internet",
+        "The computer's RAM"
+      ],
+      "answerIndex": 1,
+      "hint": "Think of the items on a menu.",
+      "explanation": "A resource is any piece of information that can be named and identified by a URI."
+    },
+    {
+      "id": "q4",
+      "type": "ArrangeTokens",
+      "prompt": "Build a RESTful URL to get the first user in a system.",
+      "tokens": [
+        "https://api.example.com",
+        "/",
+        "users",
+        "/",
+        "1"
+      ],
+      "answer": [
+        "https://api.example.com",
+        "/",
+        "users",
+        "/",
+        "1"
+      ],
+      "hint": "Base URL, then resource name, then ID.",
+      "explanation": "RESTful paths usually go from collection names to specific IDs."
+    },
+    {
+      "id": "q5",
+      "type": "FillBlank",
+      "prompt": "The most common data format used by modern REST APIs is ____.",
+      "answer": "json",
+      "accepted": [
+        "json"
+      ],
+      "hint": "JavaScript Object Notation.",
+      "explanation": "JSON is a lightweight data-interchange format that is easy for humans and machines to read."
+    },
+    {
+      "id": "q6",
+      "type": "MultipleChoice",
+      "prompt": "What does it mean for a REST API to be 'Stateless'?",
+      "choices": [
+        "It doesn't have a database",
+        "Each request must contain all info needed to understand it",
+        "The server remembers everything about you",
+        "It only works in certain countries"
+      ],
+      "answerIndex": 1,
+      "hint": "The server doesn't 'remember' previous requests on its own.",
+      "explanation": "Statelessness means the server does not store client context between requests."
+    },
+    {
+      "id": "q7",
+      "type": "FillBlank",
+      "prompt": "A specific URL where an API can be accessed is called an ____.",
+      "answer": "endpoint",
+      "accepted": [
+        "endpoint"
+      ],
+      "hint": "The 'end' of the 'point'.",
+      "explanation": "An endpoint is a specific URI where a service or resource is exposed."
+    },
+    {
+      "id": "q8",
+      "type": "ArrangeTokens",
+      "prompt": "Order these by their role in an API request: Verb, Endpoint, Header, Body.",
+      "tokens": [
+        "GET",
+        "/users/1",
+        "Accept: application/json",
+        "{ \"id\": 1 }"
+      ],
+      "answer": [
+        "GET",
+        "/users/1",
+        "Accept: application/json",
+        "{ \"id\": 1 }"
+      ],
+      "hint": "Action, Address, Metadata, Data.",
+      "explanation": "An HTTP request consists of a method (verb), a URI (endpoint), headers (metadata), and an optional body (data)."
+    },
+    {
+      "id": "q9",
+      "type": "MultipleChoice",
+      "prompt": "Which HTTP verb would you use to update only the email of a user?",
+      "choices": [
+        "GET",
+        "POST",
+        "PATCH",
+        "DELETE"
+      ],
+      "answerIndex": 2,
+      "hint": "It's like putting a 'patch' on a hole.",
+      "explanation": "PATCH is used for partial updates to a resource."
+    },
+    {
+      "id": "q10",
+      "type": "FillBlank",
+      "prompt": "A ____ Request (400) status code means the client sent something invalid.",
+      "answer": "bad",
+      "accepted": [
+        "bad"
+      ],
+      "hint": "Opposite of good.",
+      "explanation": "400 Bad Request indicates the server cannot process the request due to a client error."
+    }
+  ]
+}

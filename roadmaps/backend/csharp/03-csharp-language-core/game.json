@@ -1,0 +1,159 @@
+{
+  "lessonId": "03-csharp-language-core",
+  "title": "C# Language Core: The Factory Floor",
+  "exercises": [
+    {
+      "id": "q1",
+      "type": "MultipleChoice",
+      "prompt": "What is a 'Class' in C# based on the factory analogy?",
+      "choices": [
+        "The physical robot",
+        "The blueprint for a robot",
+        "The battery powering the robot",
+        "The box holding the robot"
+      ],
+      "answerIndex": 1,
+      "hint": "It describes how to build something but isn't the thing itself.",
+      "explanation": "A class is a blueprint or template from which objects are created."
+    },
+    {
+      "id": "q2",
+      "type": "FillBlank",
+      "prompt": "C# is a ____ typed language, meaning a variable's type cannot change once declared.",
+      "answer": "strongly",
+      "accepted": [
+        "strongly",
+        "staticly",
+        "statically"
+      ],
+      "hint": "It is strict about what goes into labeled boxes.",
+      "explanation": "C# is strongly typed, ensuring type safety at compile time."
+    },
+    {
+      "id": "q3",
+      "type": "ArrangeTokens",
+      "prompt": "Build a simple property for a 'Robot' class to hold its 'Name'.",
+      "tokens": [
+        "public",
+        "string",
+        "Name",
+        "{ get; set; }"
+      ],
+      "answer": [
+        "public",
+        "string",
+        "Name",
+        "{ get; set; }"
+      ],
+      "hint": "Access modifier, type, name, then shorthand for getter/setter.",
+      "explanation": "Properties use accessors like { get; set; } to expose class data."
+    },
+    {
+      "id": "q4",
+      "type": "MultipleChoice",
+      "prompt": "In the Coffee Machine challenge, what happens if resources are too low?",
+      "choices": [
+        "The program crashes automatically",
+        "The machine makes weak coffee",
+        "You throw an Exception (Safety Check)",
+        "The levels go into negative numbers"
+      ],
+      "answerIndex": 2,
+      "hint": "Think about safety checks on the conveyor belt.",
+      "explanation": "Exceptions are used to handle invalid states, such as insufficient resources."
+    },
+    {
+      "id": "q5",
+      "type": "FillBlank",
+      "prompt": "To repeat a task for every item in a collection, you use a ____ loop.",
+      "answer": "foreach",
+      "accepted": [
+        "foreach",
+        "for"
+      ],
+      "hint": "It sounds like 'for each item'.",
+      "explanation": "The 'foreach' loop is the standard way to iterate through collections in C#."
+    },
+    {
+      "id": "q6",
+      "type": "ArrangeTokens",
+      "prompt": "Write the logic to check if water is less than 50 and throw an error.",
+      "tokens": [
+        "if",
+        "(water < 50)",
+        "throw",
+        "new",
+        "InvalidOperationException();"
+      ],
+      "answer": [
+        "if",
+        "(water < 50)",
+        "throw",
+        "new",
+        "InvalidOperationException();"
+      ],
+      "hint": "Condition, then keyword to raise an error, then the object.",
+      "explanation": "Conditional statements (if) combined with the 'throw' keyword handle error conditions."
+    },
+    {
+      "id": "q7",
+      "type": "MultipleChoice",
+      "prompt": "What does a 'Method' represent on our robot?",
+      "choices": [
+        "Its name tag",
+        "A button that makes it do something",
+        "The color of its metal",
+        "The weight of the robot"
+      ],
+      "answerIndex": 1,
+      "hint": "Behavior, not state.",
+      "explanation": "Methods define the behaviors or actions that an object can perform."
+    },
+    {
+      "id": "q8",
+      "type": "FillBlank",
+      "prompt": "The keyword used to create an instance of a class (a robot from a blueprint) is ____.",
+      "answer": "new",
+      "accepted": [
+        "new"
+      ],
+      "hint": "3 letters, starts with 'n'.",
+      "explanation": "The 'new' keyword instantiates a class, allocating memory for a new object."
+    },
+    {
+      "id": "q9",
+      "type": "ArrangeTokens",
+      "prompt": "Assemble a method signature that returns an integer and takes no parameters.",
+      "tokens": [
+        "public",
+        "int",
+        "Calculate()",
+        "{",
+        "}"
+      ],
+      "answer": [
+        "public",
+        "int",
+        "Calculate()",
+        "{",
+        "}"
+      ],
+      "hint": "Modifier, return type, name with parentheses.",
+      "explanation": "Methods require a return type and name, plus an implementation block."
+    },
+    {
+      "id": "q10",
+      "type": "MultipleChoice",
+      "prompt": "Which of these is a correct C# integer declaration?",
+      "choices": [
+        "var age = \"25\";",
+        "int age = 25;",
+        "float age = \"25\";",
+        "string age = 25;"
+      ],
+      "answerIndex": 1,
+      "hint": "Number without quotes.",
+      "explanation": "The 'int' type is used for whole numbers without decimals or quotes."
+    }
+  ]
+}

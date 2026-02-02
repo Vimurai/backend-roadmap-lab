@@ -1,0 +1,142 @@
+{
+  "lessonId": "02-git-and-hosting",
+  "title": "Git and Hosting: The Time Machine",
+  "exercises": [
+    {
+      "id": "q1",
+      "type": "MultipleChoice",
+      "prompt": "What is the 'Staging Area' in Git?",
+      "choices": [
+        "The folder where deleted files go",
+        "A box for files ready to be saved",
+        "The folder where you write code",
+        "A place to host websites"
+      ],
+      "answerIndex": 1,
+      "hint": "It's the middle ground between your desk and the safe.",
+      "explanation": "The staging area (index) is where you group changes using 'git add' before committing them."
+    },
+    {
+      "id": "q2",
+      "type": "FillBlank",
+      "prompt": "The command to save your staged changes to the repository is 'git ____'.",
+      "answer": "commit",
+      "accepted": [
+        "commit"
+      ],
+      "hint": "Like making a save point in a game.",
+      "explanation": "'git commit' creates a snapshot of your staged changes in the project history."
+    },
+    {
+      "id": "q3",
+      "type": "ArrangeTokens",
+      "prompt": "Arrange the commands to save a new file and upload it to the cloud.",
+      "tokens": [
+        "git add",
+        "git commit",
+        "git push"
+      ],
+      "answer": [
+        "git add",
+        "git commit",
+        "git push"
+      ],
+      "hint": "Stage, save locally, then upload.",
+      "explanation": "You add files to staging, commit them to the local repo, and then push to a remote server like GitHub."
+    },
+    {
+      "id": "q4",
+      "type": "MultipleChoice",
+      "prompt": "What happens when you create a new 'Branch'?",
+      "choices": [
+        "You delete the main code",
+        "You create an alternate timeline for experiments",
+        "You upload code to GitHub",
+        "You reset all your changes"
+      ],
+      "answerIndex": 1,
+      "hint": "Think 'Multiverse'.",
+      "explanation": "Branching allows you to work on features or fixes in isolation without affecting the main codebase."
+    },
+    {
+      "id": "q5",
+      "type": "FillBlank",
+      "prompt": "To ignore files like passwords or secret keys, you list them in a file named ____.",
+      "answer": ".gitignore",
+      "accepted": [
+        ".gitignore"
+      ],
+      "hint": "Starts with a dot.",
+      "explanation": "The .gitignore file tells Git which files or directories to ignore and never track."
+    },
+    {
+      "id": "q6",
+      "type": "MultipleChoice",
+      "prompt": "Which command allows you to download an entire repository for the first time?",
+      "choices": [
+        "git pull",
+        "git checkout",
+        "git clone",
+        "git init"
+      ],
+      "answerIndex": 2,
+      "hint": "Like making a duplicate of the whole folder.",
+      "explanation": "'git clone' copies a remote repository to your local machine."
+    },
+    {
+      "id": "q7",
+      "type": "FillBlank",
+      "prompt": "A ____ Request (PR) is how you ask to merge your branch into the main code.",
+      "answer": "pull",
+      "accepted": [
+        "pull"
+      ],
+      "hint": "Opposite of push.",
+      "explanation": "A Pull Request (PR) is a request for others to review and pull your changes into their branch."
+    },
+    {
+      "id": "q8",
+      "type": "ArrangeTokens",
+      "prompt": "Order the Git states from least permanent to most permanent.",
+      "tokens": [
+        "Working Directory",
+        "Staging Area",
+        "Local Repository",
+        "Remote Repository"
+      ],
+      "answer": [
+        "Working Directory",
+        "Staging Area",
+        "Local Repository",
+        "Remote Repository"
+      ],
+      "hint": "Starts with the messy desk.",
+      "explanation": "Changes move from your desk (working) to a box (staging), then to your local safe (repo), and finally to the cloud (remote)."
+    },
+    {
+      "id": "q9",
+      "type": "MultipleChoice",
+      "prompt": "What is a 'Merge Conflict'?",
+      "choices": [
+        "A bug in the Git software",
+        "Two people editing the same line of code",
+        "Running out of disk space",
+        "Forgetting your GitHub password"
+      ],
+      "answerIndex": 1,
+      "hint": "Two people writing on the same line of paper.",
+      "explanation": "A merge conflict occurs when Git cannot automatically reconcile differences between two branches."
+    },
+    {
+      "id": "q10",
+      "type": "FillBlank",
+      "prompt": "To temporarily hide your uncommitted work to switch branches, use 'git ____'.",
+      "answer": "stash",
+      "accepted": [
+        "stash"
+      ],
+      "hint": "Like putting your work in a drawer.",
+      "explanation": "'git stash' saves your current changes aside so you can have a clean working directory."
+    }
+  ]
+}
